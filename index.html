@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+</head>
+<body style="background-color: #000; color: #fff;">
+    
+
+    <script>
+        //takes a up-to range from user
+        let range = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+        //loop to print number,Fizz,Buzz,FizzBuzz
+        for(let i=1; i<=range; i++){
+
+            //goes into this scope if divisible by 3
+            if(i%3==0){
+                //print FizzBuzz
+                if(i%5==0){
+                    document.writeln("FizzBuzz");
+                    document.writeln("<br>");
+                }
+                //Only print Fizz
+                else {
+                    document.writeln("Fizz");
+                    document.writeln("<br>");
+                }
+            }
+            //print Buzz
+            else if(i%5==0){
+                document.writeln("Buzz");
+                document.writeln("<br>");
+            }
+            //print the number
+            else{
+                document.writeln(i);
+                document.writeln("<br>");
+            }
+        } 
+    </script>
+</body>
+</html>
